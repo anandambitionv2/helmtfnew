@@ -38,7 +38,10 @@ jobs:
           tenant-id: 5f8d3f88-8e5b-4e25-9d00-e62229c9cc71
           subscription-id: 228a46db-66c5-4a23-9ed7-677a552990bc
 # 
-
+      - name: azure/use-kubelogin@v1
+        uses: azure/use-kubelogin@v1
+        with:
+          kubelogin-version: 'v0.0.24'
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
