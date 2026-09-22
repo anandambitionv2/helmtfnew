@@ -7,7 +7,7 @@ releases = {
     version          = "10.0.0"
     values           = ["values/values.yml"]
     namespace        = "argocd"
-    create_namespace = true
+    create_namespace = false
     import           = true
   
   }
