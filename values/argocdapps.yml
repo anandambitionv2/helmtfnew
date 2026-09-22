@@ -1,0 +1,27 @@
+#argocdapp.yml
+applications:
+  
+  app1:  #renamed as app1 later
+    
+    project: default
+
+    additionalAnnotations:
+      # Image Updater annotations
+      # argocd-image-updater.argoproj.io/image-list: frontend
+
+    source:
+      repoURL: https://github.com/anandambitionv2/argo-20sep.git
+      targetRevision: main
+      path: .
+
+    destination:
+      server: https://kubernetes.default.svc
+      namespace: default
+
+    syncPolicy:
+      automated:
+        prune: true
+        selfHeal: true
+
+      # syncOptions:
+      #   - CreateNamespace=true

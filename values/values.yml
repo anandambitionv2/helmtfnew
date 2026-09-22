@@ -1,0 +1,4 @@
+#updateserver.yml
+server:
+  service:
+    type: LoadBalancer

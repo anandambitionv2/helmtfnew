@@ -1,0 +1,28 @@
+# Terraform working directory
+.terraform/
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
+
+# # Terraform variable files
+# *.tfvars
+# *.tfvars.json
+
+# Terraform plan files
+*.tfplan
+tfplan
+plan.out
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Local Terraform CLI configuration
+.terraformrc
+terraform.rc
+
+# Kubeconfig / Kubernetes credentials
+kubeconfig/
