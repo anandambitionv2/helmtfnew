@@ -8,5 +8,7 @@ variable "releases" {
     values           = optional(list(string), [])
     namespace        = string
     create_namespace = bool
-  }))
+    import           = optional(bool, false)
+  }) )
+  default = {}
 }

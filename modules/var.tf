@@ -8,6 +8,7 @@ variable "releases" {
     values           = optional(list(string), [])
     namespace        = string
     create_namespace = optional(bool)
+  
   }))
   
 }
