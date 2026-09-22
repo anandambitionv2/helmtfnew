@@ -32,8 +32,8 @@ releases = {
     chart            = "helm-nginx"
     version          = "0.30.0"
     values           = ["./values/customnginx.yml"]
-    namespace        = "default"
-    create_namespace = false
+    namespace        = "mycustomnginx"
+    create_namespace = true
   
   }
 }
