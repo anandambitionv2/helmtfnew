@@ -8,6 +8,7 @@ releases = {
     values           = ["./values/values.yml"]
     namespace        = "argocd"
     create_namespace = true
+    import           = true
   
   }
 
@@ -21,7 +22,7 @@ releases = {
     values           = ["./values/argocdapps.yml"]
     namespace        = "argocd"
     create_namespace = false
-  
+    import           = true
   }
 
 #   "r3" = {
