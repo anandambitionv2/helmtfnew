@@ -24,15 +24,15 @@ releases = {
   
   }
 
-  "r3" = {
+#   "r3" = {
     
-    name             = "mycustomnginx"
-    repository       = "oci://acrwinter.azurecr.io/helm"
-    chart            = "helm-nginx"
-    version          = "0.30.0"
-    # values           = ["./values/customnginx.yml"]
-    namespace        = "default"
-    create_namespace = false
+#     name             = "mycustomnginx"
+#     repository       = "oci://acrwinter.azurecr.io/helm"
+#     chart            = "helm-nginx"
+#     version          = "0.30.0"
+#     # values           = ["./values/customnginx.yml"]
+#     namespace        = "default"
+#     create_namespace = false
   
-  }
+#   }
 }
