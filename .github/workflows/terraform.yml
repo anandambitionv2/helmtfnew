@@ -30,6 +30,23 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
+      
+      - name: Debug files
+        run: |
+          echo "Current directory:"
+          pwd
+
+          echo ""
+          echo "Repository files:"
+          find . -type f | sort
+
+          echo ""
+          echo "Values directory:"
+          ls -la values
+
+          echo ""
+          echo "values.yml content:"
+          cat values/values.yml
 
       - name: Azure Login
         uses: azure/login@v3
