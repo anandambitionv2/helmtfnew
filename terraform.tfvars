@@ -34,6 +34,7 @@ releases = {
     values           = ["./values/customnginx.yml"]
     namespace        = "mycustomnginx"
     create_namespace = true
+    reset_values     = true
   
   }
 }

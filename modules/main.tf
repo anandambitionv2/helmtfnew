@@ -4,6 +4,7 @@ resource "helm_release" "example" {
   repository = each.value.repository
   chart      = each.value.chart
   version    = each.value.version
+  reset_values = each.value.reset_values
 
  values = [for a in each.value.values : file(a)]
  namespace = each.value.namespace

@@ -9,6 +9,7 @@ variable "releases" {
     namespace        = string
     create_namespace = bool
     import           = optional(bool, false)
+    reset_values     = optional(bool, false )
   }) )
   default = {}
 }
