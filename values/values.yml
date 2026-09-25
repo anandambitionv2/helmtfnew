@@ -15,12 +15,7 @@ repoServer:
 
 configs:
   repositories:
-    secretchildapphelm:
-      type: helm
-      name: helm-nginx
-      url: acrwinter.azurecr.io/helm
-      enableOCI: "true"
-      useAzureWorkloadIdentity: "true"
+    
 
     secretchildapphelm2:
       type: helm
