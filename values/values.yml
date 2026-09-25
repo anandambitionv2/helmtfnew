@@ -7,12 +7,11 @@ repoServer:
 
 
 
-  
 
   podLabels:
     azure.workload.identity/use: "true"
 
-  
+    
 
 configs:
   repositories:
@@ -20,5 +19,12 @@ configs:
       type: helm
       name: helm-nginx
       url: acrwinter.azurecr.io/helm
+      enableOCI: "true"
+      useAzureWorkloadIdentity: "true"
+
+    secretchildapphelm2:
+      type: helm
+      name: not-working
+      url: palam2.azurecr.io/helm
       enableOCI: "true"
       useAzureWorkloadIdentity: "true"
