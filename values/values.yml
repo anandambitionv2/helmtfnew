@@ -4,6 +4,11 @@ server:
     type: LoadBalancer
 
 repoServer:
+  env:
+    - name: AZURE_ARM_TOKEN_RESOURCE
+      value: "https://containerregistry.azure.net"
+
+
   serviceAccount:
     create: true
     name: argocd-acr-repo-server
