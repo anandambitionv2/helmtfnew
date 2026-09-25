@@ -2,3 +2,14 @@
 server:
   service:
     type: LoadBalancer
+
+repoServer:
+  serviceAccount:
+    create: true
+    name: argocd-acr-repo-server
+    # annotations:
+    #   azure.workload.identity/client-id: "<MANAGED_IDENTITY_CLIENT_ID>"
+    #   azure.workload.identity/tenant-id: "<TENANT_ID>"
+
+  podLabels:
+    azure.workload.identity/use: "true"
