@@ -4,9 +4,7 @@ server:
     type: LoadBalancer
 
 repoServer:
-  env:
-    - name: AZURE_ARM_TOKEN_RESOURCE
-      value: "https://containerregistry.azure.net"
+
 
 
   serviceAccount:
@@ -18,6 +16,10 @@ repoServer:
 
   podLabels:
     azure.workload.identity/use: "true"
+
+  env:
+    - name: AZURE_ARM_TOKEN_RESOURCE
+      value: "https://containerregistry.azure.net"
 
 configs:
   repositories:
