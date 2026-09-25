@@ -7,12 +7,7 @@ repoServer:
 
 
 
-  serviceAccount:
-    create: true
-    name: argocd-acr-repo-server
-    annotations:
-      azure.workload.identity/client-id: "14366076-3015-44f3-834b-cef7c93c9c0f"
-      azure.workload.identity/tenant-id: "5f8d3f88-8e5b-4e25-9d00-e62229c9cc71"
+  
 
   podLabels:
     azure.workload.identity/use: "true"
