@@ -13,3 +13,18 @@ repoServer:
 
     
 
+configs:
+  repositories:
+    secretchildapphelm:
+      type: helm
+      name: helm-nginx
+      url: acrwinter.azurecr.io/helm
+      enableOCI: "true"
+      useAzureWorkloadIdentity: "true"
+
+    secretchildapphelm2:
+      type: helm
+      name: not-working
+      url: palam2.azurecr.io/helm
+      enableOCI: "true"
+      useAzureWorkloadIdentity: "true"
