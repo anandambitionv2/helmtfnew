@@ -54,17 +54,17 @@ release_jenkinsnative = {
   }
 
 
-  # "r2" = {
+  "r2" = {
     
-  #   name             = "argo-app-release"
-  #   repository       = "https://argoproj.github.io/argo-helm"
-  #   chart            = "argocd-apps"
-  #   version          = "2.0.5"
-  #   values           = ["./values/argocdapps.yml"]
-  #   namespace        = "argocd"
-  #   create_namespace = false
-  #   import           = true
-  # }
+    name             = "argo-app-release"
+    repository       = "https://argoproj.github.io/argo-helm"
+    chart            = "argocd-apps"
+    version          = "2.0.5"
+    values           = ["./values/argocdappsjenkinsnative.yml"]
+    namespace        = "argocd"
+    create_namespace = false
+    
+  }
 
 
 }
