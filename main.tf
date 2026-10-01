@@ -8,4 +8,7 @@ module "helm" {
 module "helm_aksjenkinsnative" {
     source = "./modules"
     releases = var.release_jenkinsnative  
+    providers = {
+      helm = helm.aksjenkinsnative
+    }
 }
